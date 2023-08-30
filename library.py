@@ -63,12 +63,12 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
 
 @st.cache_data
 def load_data(url):
-    df_full = pd.read_excel(url)
+    df_full = pd.read_csv(url)
     df_full = df_full.fillna(np.nan)
     return df_full
 
 
-df= load_data("lib230830.xlsx")
+df= load_data("./resources/lib230830.csv")
 st.dataframe(filter_dataframe(df), use_container_width=True)
 
 
