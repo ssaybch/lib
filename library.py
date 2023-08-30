@@ -1,17 +1,7 @@
 import numpy as np
 import pandas as pd
-from pandas.api.types import (
-    is_categorical_dtype,
-    is_datetime64_any_dtype,
-    is_numeric_dtype,
-    is_object_dtype,
-)
 import streamlit as st
-from streamlit_chat import message
-import streamlit.components.v1 as components
 import json
-import fnmatch
-
 
 ##### Dataframe filter
 def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
