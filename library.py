@@ -68,6 +68,4 @@ def load_data(url):
 
 
 df= load_data("./resources/lib230830.csv")
-st.dataframe(filter_dataframe(df), use_container_width=True)
-
-
+st.dataframe(filter_dataframe(df))
