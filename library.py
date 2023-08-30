@@ -66,5 +66,4 @@ def load_data(url):
     df_full = df_full.fillna(np.nan)
     return df_full
 
-df= load_data("./lib230830.csv")
-st.dataframe(filter_dataframe(df), use_container_width=True)
+st.write("hi")
